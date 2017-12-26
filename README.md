@@ -3,7 +3,7 @@ Bayside Bitcoin cryptocurrency and Blockchain consulting company website. Create
 
 [![New Age Preview](./img/site.png)](https://blackrockdigital.github.io/startbootstrap-new-age/)
 
-**[View Live Preview](https://www.baysidebitcoin.com)**
+**[View Live Preview](https://baysidebitcoin.github.io/baysidebitcoin-site/)**
 
 ## Technology Used
  - NPM + GULP
