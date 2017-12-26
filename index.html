@@ -1,146 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
-  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  
-  <script type="text/javascript" src="assets/js/pirobox_extended.js"></script>
-  <link href="assets/css_pirobox/style_1/style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/css.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/content/css/default.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/css/sansation/stylesheet.css"/>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bayside Bitcoin - Your Bay Area Cryptocurrency Acquisition and Consulting Expert">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
-    <title>BaysideBitcoin.com - Coming Soon (Under Construction) - Your Digital Currency Acquisition and Consulting Expert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bayside Bitcoin - Cryptocurrency/Blockchain Technology Consultation and Services</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/soon.css" rel="stylesheet">
+    <link href="css/new-age.min.css" rel="stylesheet">
 
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
-$(document).ready(function() {
-	$().piroBox_ext({
-	piro_speed : 700,
-		bg_alpha : 0.5,
-		piro_scroll : true // pirobox always positioned at the center of the page
-	});
-});
-</script>
-<script src="assets/js/bitcoinprices.js"></script>
-<script>
-    $(document).ready(function() {
-        bitcoinprices.init({
-
-            // Where we get bitcoinaverage data
-            url: "https://api.bitcoinaverage.com/ticker/all",
-
-            // Which of bitcoinaverages value we use to present prices
-            marketRateVariable: "24h_avg",
-
-            // Which currencies are in shown to the user
-            currencies: ["USD", "EUR", "CNY"],
-
-            // Special currency symbol artwork
-            symbols: {
-                "BTC": "<i class='fa fa-btc'></i>",
-				"USD": "<i class='fa fa-usd'></i>"
-            },
-
-            // Which currency we show user by the default if
-            // no currency is selected
-            defaultCurrency: "USD",
-
-            // How the user is able to interact with the prices
-            ux : {
-                // Make everything with data-btc-price HTML attribute clickable
-                clickPrices : true,
-
-                // Build Bootstrap dropdown menu for currency switching
-                menu : true,
-            },
-
-            // Allows passing the explicit jQuery version to bitcoinprices.
-            // This is useful if you are using modular javascript (AMD/UMD/require()),
-            // but for most normal usage you don't need this
-            jQuery: jQuery,
-
-            // Price source data attribute
-            priceAttribute: "data-btc-price",
-
-            // Price source currency for data-btc-price attribute.
-            // E.g. if your shop prices are in USD
-            // but converted to BTC when you do Bitcoin
-            // checkout, put USD here.
-            priceOrignalCurrency: "BTC"
-
-        });
-    });
-</script>
   </head>
-  <!-- START BODY -->
-  <body class="nomobile">
-    <img style="position: fixed;top: 0;left: 0;min-width: 100%; min-height: 100%;" src="assets/img/slider/3.jpg"></img>
-    <!-- START HEADER -->
-    <section id="header">
-        <div class="container">
-            <header>
-                <!-- HEADLINE -->
-				<!--<img src="kerlogo.png" data-animated="GoIn" > </img> -->
-                <h1 data-animated="GoIn">Bayside <i class="fa fa-btc"></i>itcoin</h1>
-                <h5 data-animated="GoIn"><font color="white">The Bay Area's Digital Currency: Acquisition, Liquidation, and Consulting Experts</font></h5>
-            </header>
-                        
-            <!-- START TIMER -->
-            <div id="timer" data-animated="FadeIn">
-                <p id="message"></p>
-                <div id="days" class="timer_box"></div>
-                <div id="hours" class="timer_box"></div>
-                <div id="minutes" class="timer_box"></div>
-                <div id="seconds" class="timer_box"></div>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><i class="fa fa-cubes" aria-hidden="true"> </i> Bayside<i class="fa fa-bitcoin" aria-hidden="true"></i>itcoin</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download"><i class="fa fa-gear" aria-hidden="true"> </i> Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features"><i class="fa fa-university" aria-hidden="true"> </i> Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-envelope-open-o" aria-hidden="true"> </i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-xxl-7 my-auto">
+            <div class="header-content mx-auto">
+              <h2 class="mb-5">Bayside Bitcoin is one of the worlds first Cryptocurrency/Blockchain technology consulting firms.</h2>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Our Expertise</a>
             </div>
-			</br>
-
-            <h3 style="color:white;">Let me know when the site goes live!</h3>
-
-            <div class="col-lg-4 col-lg-offset-4 mt centered">
-				  <a href="https://docs.google.com/forms/d/1K2JRtg7fB75R-v-yjCmo1TgFOGQB_jcdu1dlyMN8rqM/viewform?usp=send_form" rel="iframe-630-760"  class="pirobox_gall1" title="Contact Bayside Bitcoin"><button type="submit" class="btn btn-info"><b style="font-size:16;color:white;"><i class="fa fa-envelope"> </i> Contact us</b> </button></a>
-			</div>
-			</BR>
-			<div class="col-lg-4 col-lg-offset-4 mt centered"><h2 style="color:white;">1.00000000 <i class="fa fa-btc"> </i> = <span data-btc-price="1.0"></span></h2></div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <img src="img/planet.png"></img>
+            </div>
+          </div>
         </div>
-		
-        <!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
-        <div id="layer">
+      </div>
+    </header>
+    <section class="download bg-primary text-center" id="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">Coins/Tokens, Smart Contracts, Investing, Storage, DApps...</h2>
+            <p style="color:white;">Bayside Bitcoin specializes in: Coin/Token Investment Evaluations, Smart Contract Development, Wallet and Cold Storage Solutions, Technology Evaluations</p>
+            <div class="badges">
+              <a class="badge-link" href="#"><img src="img/BC_Logo_.png" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/ethereum-1.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/litecoin.png" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/ripple-2.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/miota.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/monero.png" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/nem-xem.svg" alt=""></a>
+              <a class="badge-link" href="#"><img src="img/dash-3.svg" alt=""></a>
+            </div>
+          </div>
         </div>
-        <!-- END LAYER -->
+      </div>
     </section>
-    <!-- END HEADER -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
-	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.colorbox.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.colorbox-min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/soon/plugins.js"></script>
-    <script src="assets/js/soon/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/js/soon/custom.js"></script>
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Consultation on anything Cryptocurrency</h2>
+          <p class="text-muted">"An investment in knowledge pays the best interest." - Benjamin Franklin</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup macbook portrait white">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="img/demo2.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-graph text-primary"></i>
+                    <h3>Investing</h3>
+                    <p class="text-muted">Get expert advice in regards to Cryptocurrency investing.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-layers text-primary"></i>
+                    <h3>Development</h3>
+                    <p class="text-muted">ICO's (ERC-20) and custom Currencies, Smart Contracts, DApps, Trading Bots</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-graduation text-primary"></i>
+                    <h3>Education</h3>
+                    <p class="text-muted">Need help understanding anything Cryptocurrency/Blockchain related?</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock text-primary"></i>
+                    <h3>Currency Storage</h3>
+                    <p class="text-muted">Storage consultation: Long-term "Cold Storage", Hot Wallets etc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h3 style="color:white;" class="section-heading"><i class="fa fa-cubes" aria-hidden="true"> </i> Bayside<i class="fa fa-bitcoin" aria-hidden="true"></i>itcoin</h3 class="section-heading">
+          <br>
+          <p style="color:white;">Your trusted Cryptocurrency and Blockchain Experts!</p>
+          <br>
+          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Get in Touch!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+      <footer>
+      <div class="container">
+        <p>&copy; 2018 Bayside Bitcoin. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
   </body>
-  <!-- END BODY -->
+
 </html>
