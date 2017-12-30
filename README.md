@@ -1,7 +1,7 @@
 # [bayside-bitcoin-site](https://www.baysidebitcoin.com)
 Bayside Bitcoin cryptocurrency and Blockchain consulting company website. Created using the template provided by Blackrock Digital known as New-age.
 
-[![New Age Preview](./img/site.png)](https://blackrockdigital.github.io/startbootstrap-new-age/)
+[![New Age Preview](./img/site.png)](https://baysidebitcoin.github.io/baysidebitcoin-site/)
 
 **[View Live Preview](https://baysidebitcoin.github.io/baysidebitcoin-site/)**
 
