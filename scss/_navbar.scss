@@ -4,18 +4,18 @@
     background-color: white;
     @include transition-all;
     @include heading-font;
+    color:white;
     .navbar-brand {
-        color: whitesmoke;
         @include heading-font;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: $gray-darker;
         }
     }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
-        color: $gray-darker;
+        color: black;
     }
     .navbar-nav {
         > li {
@@ -32,42 +32,6 @@
             }
             > a,
             > a:focus {
-                color: $gray-darker;
-                &:hover {
-                    color: $theme-primary;
-                }
-            }
-        }
-    }
-    @media (min-width: 992px) {
-        border-color: transparent;
-        background-color: transparent;
-        .navbar-brand {
-            color: fade(white, 70%);
-            &:hover,
-            &:focus {
-                color: white;
-            }
-        }
-        .navbar-nav > li > a,
-        .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
-            &:hover {
-                color: white;
-            }
-        }
-        &.navbar-shrink {
-            border-color: fade-out($gray-darker, .9);
-            background-color: white;
-            .navbar-brand {
-                color: $gray-darker;
-                &:hover,
-                &:focus {
-                    color: $theme-primary;
-                }
-            }
-            .navbar-nav > li > a,
-            .navbar-nav > li > a:focus {
                 color: $gray-darker;
                 &:hover {
                     color: $theme-primary;

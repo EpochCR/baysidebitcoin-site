@@ -56,18 +56,18 @@ section {
   transition: all .35s;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: white; }
   #mainNav .navbar-brand {
-    color: whitesmoke;
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px; }
     #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-      color: #0c253d; }
+      color: #222222; }
   #mainNav .navbar-toggler {
     font-size: 12px;
     padding: 8px 10px;
-    color: #222222; }
+    color: black; }
   #mainNav .navbar-nav > li > a {
     font-size: 11px;
     font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -84,33 +84,6 @@ section {
     #mainNav .navbar-nav > li > a:hover,
     #mainNav .navbar-nav > li > a:focus:hover {
       color: #153f67; }
-  @media (min-width: 992px) {
-    #mainNav {
-      border-color: transparent;
-      background-color: transparent; }
-      #mainNav .navbar-brand {
-        color: fade(white, 70%); }
-        #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-          color: white; }
-      #mainNav .navbar-nav > li > a,
-      #mainNav .navbar-nav > li > a:focus {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNav .navbar-nav > li > a:hover,
-        #mainNav .navbar-nav > li > a:focus:hover {
-          color: white; }
-      #mainNav.navbar-shrink {
-        border-color: rgba(34, 34, 34, 0.1);
-        background-color: white; }
-        #mainNav.navbar-shrink .navbar-brand {
-          color: #222222; }
-          #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-            color: #153f67; }
-        #mainNav.navbar-shrink .navbar-nav > li > a,
-        #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-          color: #222222; }
-          #mainNav.navbar-shrink .navbar-nav > li > a:hover,
-          #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-            color: #153f67; } }
 
 header.masthead {
   position: relative;
@@ -155,7 +128,7 @@ section.download {
     margin-top: 0;
     color: white; }
   section.download .badges .badge-link {
-    display: block;
+    display: inline-block;
     margin-bottom: 25px; }
     section.download .badges .badge-link:last-child {
       margin-bottom: 0; }
@@ -205,7 +178,7 @@ section.features .feature-item {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta1.jpg");
+  background-image: url("../img/bg-cta1-faded.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -223,13 +196,6 @@ section.cta {
     @media (min-width: 768px) {
       section.cta .cta-content h2 {
         font-size: 80px; } }
-  section.cta .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); }
 
 section.contact {
   text-align: center; }
