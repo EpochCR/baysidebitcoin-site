@@ -4,7 +4,7 @@
     background-color: white;
     @include transition-all;
     @include heading-font;
-    color:white;
+    color:black;
     .navbar-brand {
         @include heading-font;
         &:hover,
